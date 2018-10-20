@@ -1,0 +1,57 @@
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet">
+    <title>Live Simple Love Nature</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <!-- Code that all your templates share, like a header -->
+    <div class="off-canvas-wrapper">
+      <div id="menu-header">
+        <div class="off-canvas-absolute position-top" id="menu-off-canvas" data-off-canvas>
+          <ul class="vertical menu">
+            <a href="/">HOME</a>
+            <a href="/manifesto">MANIFESTO</a>
+            <a href="/blog">BLOG</a>
+          </ul>
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x">
+            <svg width="50" height="25" data-toggle="menu-off-canvas">
+              <rect x="0" y="0" rx="2" ry="2" width="30" height="5" style="fill:white;" />
+              <rect x="0" y="10" rx="2" ry="2" width="30" height="5" style="fill:white;" />
+              <rect x="0" y="20" rx="2" ry="2" width="30" height="5" style="fill:white;" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
+      {{ block "footer" . }}
+      <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+      <div id="page-footer">
+        <div class="grid-container">
+          <div class="grid-x">
+            <div class="cell"><svg width="100%" height="10">
+                <rect x="0" y="0" rx="3" ry="5" width="100%" height="8" style="fill:black;" />
+            </svg></div>
+            <div class="cell">&copy;<a href="https://benny.id">benny.id</a>, 2018</div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/what-input/5.1.1/what-input.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
