@@ -1,0 +1,44 @@
+#menu-header {
+  margin: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+  color: white;
+}
+
+#homepage-banner {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#homepage-banner .heading-1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+}
+
+#homepage-banner .heading-2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+}
+
+#page-footer {
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+}
+
+.post-title {
+  font-family: 'Pacifico', cursive;
+}
+
+.post-quote {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  margin-left: 10%;
+}
+
+.post-content {
+  font-family: 'Lato', sans-serif;
+}
